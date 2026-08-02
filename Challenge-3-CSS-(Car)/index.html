@@ -1,0 +1,79 @@
+﻿<div class="container">
+    <div class="top-part"></div>
+
+    <div class="car-body">
+        <div class="wheel-container">
+            <div class="wheel"></div>
+            <div class="wheel"></div>
+        </div>  
+    </div>
+
+  
+
+    <div class="window">
+    </div>
+</div>
+<style>
+
+body {
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    height:100vh;
+    background: hsl(0deg 100% 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+   .top-part {
+    width: 150px;
+    height: 45px;
+    background:#d4d5ff;
+
+}
+    
+.car-body {
+    
+    width: 220px;
+    height: 60px;
+    background:#d4d5ff;
+    position: relative;
+
+}
+
+ 
+.wheel-container {
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+    position: absolute;
+    top: 50%;
+    }
+
+.wheel {
+    width:40px;
+    height:40px;
+    background: #6f6f6f;
+    border-radius: 50%;
+}
+
+.window {
+    position: absolute;
+    width: 20px;
+    height: 70px;
+    background:#fffed4;
+
+}
+
+<!-- Edit the code before this comment to match the target -->
+

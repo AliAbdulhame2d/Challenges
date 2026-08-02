@@ -1,0 +1,32 @@
+body {
+	width: 100%;
+	height: 100vh;
+	background-color:black;
+
+}
+.box {
+	position: relative;	
+}
+.box::before {
+	content: "";
+	background-color: white;
+	width: 45px;
+	height: 45px;
+border-radius: 50%;
+	position:absolute;
+  animation: myAnimation 6s infinite ease-in-out;
+
+}
+
+.box::after {
+	content: "Hello World";
+	color: white;
+
+mix-blend-mode: difference;
+}
+
+@keyFrames myAnimation {
+	0% {transform:translatex(150%)}
+	50% { transform:translatex(-150%)}
+	100% { transform:translatex(150%)}
+}
